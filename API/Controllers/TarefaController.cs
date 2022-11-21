@@ -13,6 +13,7 @@ namespace API.Controllers
         public IActionResult Salvar(ViewModels.TarefaViewModel tarefaVM)
         {
             int teste55;
+            int ttrsdte;
             Models.Tarefa t = new Models.Tarefa();
             t.Id = tarefaVM.Id;
             t.Descricao = tarefaVM.Descricao;

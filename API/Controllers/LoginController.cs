@@ -14,13 +14,15 @@ namespace API.Controllers
         [HttpPost]
         public IActionResult Validar(ViewModels.LoginViewModel loginVM)
         {
-
+            int num;
+            int numet;
             var sucesso = false;
             string msg = "";
             if (loginVM.Nome == "a" && loginVM.Senha == "1")
             {
                 var userClaims = new List<Claim>()
                 {
+                    
                     new Claim("usuarioId", "111111"),
                     new Claim("nome", "Andre")
                 };
